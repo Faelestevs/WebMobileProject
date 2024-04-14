@@ -1,0 +1,53 @@
+
+.titulo-relatar {
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.corpo-relatos{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    background-color: var(--cor-quartenaria);
+    border-radius: 40px;
+    margin-top: 12px;
+    padding: 12px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20);
+    padding-bottom: 12px;
+}
+
+.imagem-relatos {
+    width: 400px;
+    object-fit: cover;
+}
+
+.texto-relato-motivador {
+    text-align: center;
+}
+
+.campo-comentario {
+    resize: none;
+    width: 350px;
+    height: 150px;
+    margin: 12px auto;
+    padding: 8px;
+    border-radius: 16px;
+    border-color: var(--cor-terciaria);
+}
+
+.form-relatos {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-comentario::-webkit-input-placeholder{
+    color: var(--cor-primaria);
+    font-weight: 600;
+    font-size: 16pt;
+}
+
+.form-relatos > .botao-confirmar {
+    margin: auto;
+}

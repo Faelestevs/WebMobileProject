@@ -1,0 +1,25 @@
+.navegacao-barra {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo-navegacao, .hamburguer-botao {
+    width: 100px;
+    height: 100px;
+    margin: 24px;
+}
+
+.logo-navegacao {
+    object-fit: scale-down;
+    object-position: center;
+}
+
+.hamburguer-botao{
+    object-fit: scale-down;
+    object-position: center;
+    cursor: pointer;
+}

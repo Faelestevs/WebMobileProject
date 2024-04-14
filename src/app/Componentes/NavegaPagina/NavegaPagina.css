@@ -1,0 +1,57 @@
+:root{
+    --cor-primaria:  #2EC4B6;
+    --cor-secundaria: #A8DADC;
+    --cor-terciaria: #457B9D;
+    --cor-quartenaria: #EDF6F9;
+}
+
+body {
+    overflow-x: hidden;
+    padding: 0;
+}
+
+.janela-navegacao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color:#A8DADC;
+    align-content: center;
+    justify-content: center;
+}
+
+.fecha-janela {
+    position: absolute;
+    top: 40px;
+    right: 44px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.espaco-fecha-janela {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.opcao-navegacao-mobile {
+    color: white;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 24pt;
+    margin: 15px;
+}
+
+.opcao-navegacao-mobile:hover {
+    color: #457B9D;
+    cursor: pointer;
+    transition: 0.8s;
+}

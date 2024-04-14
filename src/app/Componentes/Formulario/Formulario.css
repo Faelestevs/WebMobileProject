@@ -1,0 +1,71 @@
+
+
+.formulario {
+    display: flex;
+    max-width: 800px;
+    max-height: 500px;
+    flex-direction: column;
+    margin: auto;
+    padding: 4px;
+    gap: 5px;
+    margin: 30px;
+}
+
+input, .campo-sexo {
+    border: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 15px;
+}
+
+.campo-sexo {
+    text-align: center;
+}
+
+form > .botao-confirmar {
+    width: 186px;
+    height: 49px;
+    align-self: center;
+    margin-top: 80px;
+    border-radius: 12px;
+    background-color: var(--cor-primaria);
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20);
+    color: white;
+    font-size: 16pt;
+    font-weight: 500;
+    transition: 0.8s;
+}
+
+.botao-confirmar:hover {
+    background-color: var(--cor-terciaria);
+    scale: 102%;
+    cursor: pointer;
+}
+
+.campo-cidade-sexo {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    align-content: center;
+    justify-content: center;
+}
+
+input {
+    margin-bottom: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}

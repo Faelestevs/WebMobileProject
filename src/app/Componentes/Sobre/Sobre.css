@@ -1,0 +1,84 @@
+
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main-sobre {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    position: absolute;
+}
+
+.corpo-sobre{
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    margin: 30px auto 40px;
+    border-radius: 40px;
+}
+
+.titulo-sobre {
+    background-color: var(--cor-primaria);
+    border: 1px solid var(--cor-terciaria);
+    height: 40%;
+    border-radius: 40px 40px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24pt;
+    font-weight: 700;
+    color: white;
+}
+
+.inferior-box-sobre {
+    background-color: var(--cor-quartenaria);
+    border-radius: 0px 0px 40px 40px;
+    border: 1px solid var(--cor-terciaria);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    padding: 15px;
+}
+
+.autores-sobre {
+    text-align:initial;
+    width: 60%;
+    align-self: center;
+}
+
+.fecha-janela-verde {
+    object-fit: scale-down;
+    width: 50px;
+    margin: 10%;
+    align-self: center;
+}
+
+.img-cientista {
+    max-width: 150px;
+    max-height: 30%;
+    margin-left: 12%;
+    margin-top: -40px;
+}
+
+.link-fecha {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+}
+
+.div-fecha {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
