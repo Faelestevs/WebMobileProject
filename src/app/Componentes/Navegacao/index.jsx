@@ -1,19 +1,58 @@
 "use client"
 
-import NavegaPagina from "../NavegaPagina";
-import "./Navegacao.css"
+import styles from "./navegacao.module.css"
+import Link from "next/link";
 import { useState } from "react";
 
 const Navegacao = () => {
+    return (
+        <section className={styles.navegacaoBarra}>
+            <img src="./imagens/logowithGreenFill.png" className={styles.logoNavegacao}></img>
+            <Menu />
+        </section>
+    )
+}
 
-    const [navegar, setNavegar] = useState(false)
 
-    if (navegar === false) {return <section className="navegacao-barra">
-    <img src="./imagens/logowithGreenFill.png" className="logo-navegacao"></img>
-    <img onClick={(navegar) => setNavegar(true)} src="./imagens/hambuger.png" className="hamburguer-botao"></img>
-    </section>}
-    else if (navegar === true) {return <NavegaPagina />}
-    
+function Menu() {
+    const [menu, setMenu] = useState(styles.navMenu);
+
+    const clique = () => {
+        setMenu(styles.navMenuActive)
+    }
+
+    const fecha = () => {
+        setMenu(styles.navMenu)
+    }
+
+    if (menu == styles.navMenu) {
+        return (
+            <nav className={menu}>
+                <img src="./imagens/hambuger.png" onClick={clique} className={styles.hamburguerBotao}></img>
+                <ul className={styles.menu}>
+                    <li className={styles.li}><Link href="/Home" className={styles.opcaoNavegacao}>Home</Link></li>
+                    <li className={styles.li}><Link href="/RelatarPost" className={styles.opcaoNavegacao}>Relatar</Link></li>
+                    <li className={styles.li}><Link href="/Relatos" className={styles.opcaoNavegacao}>Relatos</Link></li>
+                    <li className={styles.li}><Link href="/About" className={styles.opcaoNavegacao}>Sobre</Link></li>
+                    <li className={styles.li}><Link href="/Registro" className={styles.opcaoNavegacao}>Registre-se</Link></li>
+                </ul>
+            </nav>
+        )
+    } else if (menu == styles.navMenuActive) {
+        return (
+            <nav className={menu}>
+                <img src="./imagens/closeIcon.png" onClick={() => fecha()} className={styles.fechaJanela}></img>
+                <ul className={styles.menu}>
+                    <li className={styles.li}><Link href="/Home" className={styles.opcaoNavegacao}>Home</Link></li>
+                    <li className={styles.li}><Link href="/RelatarPost" className={styles.opcaoNavegacao}>Relatar</Link></li>
+                    <li className={styles.li}><Link href="/Relatos" className={styles.opcaoNavegacao}>Relatos</Link></li>
+                    <li className={styles.li}><Link href="/About" className={styles.opcaoNavegacao}>Sobre</Link></li>
+                    <li className={styles.li}><Link href="/Registro" className={styles.opcaoNavegacao}>Registre-se</Link></li>
+                </ul>
+            </nav>
+        )
+    }
+
 }
 
 

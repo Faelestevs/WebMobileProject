@@ -10,7 +10,7 @@ body {
     padding: 0;
 }
 
-.janela-navegacao {
+.janelaNavegacao {
     position: absolute;
     top: 0;
     left: 0;
@@ -27,22 +27,13 @@ body {
     justify-content: center;
 }
 
-.fecha-janela {
-    position: absolute;
-    top: 40px;
-    right: 44px;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-}
-
-.espaco-fecha-janela {
+.espacoFechaJanela {
     width: 100%;
     display: flex;
     justify-content: end;
 }
 
-.opcao-navegacao-mobile {
+.opcaoNavegacaoMobile {
     color: white;
     text-decoration: underline;
     font-weight: 500;
@@ -50,7 +41,7 @@ body {
     margin: 15px;
 }
 
-.opcao-navegacao-mobile:hover {
+.opcaoNavegacaoMobile:hover {
     color: #457B9D;
     cursor: pointer;
     transition: 0.8s;

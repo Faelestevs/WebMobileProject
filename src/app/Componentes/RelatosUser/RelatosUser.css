@@ -1,0 +1,15 @@
+.titulo-topico-relatos {
+    height: clamp(44px, 8vw, 80px);
+    width: 70%;
+    letter-spacing: 2px;
+    max-width: 500px;
+    border-radius: 0px 50px 50px 0px;
+    background-color:#457B9D;
+    color: white;
+    text-align: center;
+    align-content: center;
+    font-size: clamp(12px, 4vw, 24px);
+    font-weight: 600;
+    margin-top: 16px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.20);
+}

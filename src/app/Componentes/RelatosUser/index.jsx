@@ -2,7 +2,7 @@ import CardRelato from "../CardRelato";
 import Navegacao from "../Navegacao";
 import "./RelatosUser.css";
 
-let dadosRelatos = [
+const dadosRelatos = [
     {
         usuario: "Daniel José Raimundo",
         cidade: "São Paulo - SP",
@@ -23,8 +23,8 @@ const RelatosUser = () => {
     return (
         <>
         <Navegacao />
-        <div className="titulo-topico"><p className="titulo-relatos">Relatos</p></div>
-        {dadosRelatos.map((dadosRelatos) => <CardRelato {...dadosRelatos} />)}
+        <div className="titulo-topico-relatos"><p className="titulo-relatos">Relatos</p></div>
+        {dadosRelatos.map((dadosRelatos) => <CardRelato key={dadosRelatos.usuario} {...dadosRelatos} />)}
         </>
     )
 }

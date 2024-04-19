@@ -2,13 +2,14 @@
 
 .formulario {
     display: flex;
+    width: 90%;
     max-width: 800px;
     max-height: 500px;
     flex-direction: column;
     margin: auto;
     padding: 4px;
     gap: 5px;
-    margin: 30px;
+    margin-top: 15%;
 }
 
 input, .campo-sexo {
@@ -19,27 +20,13 @@ input, .campo-sexo {
 
 .campo-sexo {
     text-align: center;
+    width: 95%;
+    margin: auto;
 }
 
-form > .botao-confirmar {
-    width: 186px;
-    height: 49px;
-    align-self: center;
-    margin-top: 80px;
-    border-radius: 12px;
-    background-color: var(--cor-primaria);
-    border: none;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20);
-    color: white;
-    font-size: 16pt;
-    font-weight: 500;
-    transition: 0.8s;
-}
-
-.botao-confirmar:hover {
-    background-color: var(--cor-terciaria);
-    scale: 102%;
-    cursor: pointer;
+.campo-cidade {
+    width: 95%;
+    margin: auto;
 }
 
 .campo-cidade-sexo {

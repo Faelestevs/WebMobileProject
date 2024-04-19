@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Navegacao from "../Navegacao";
 import Opcao from "../Opcao";
 import "./TelaOpcoes.css"
@@ -27,9 +26,8 @@ const TelaOpcoes = () => {
 
     return (
         <div className="pagina-escolhe-opcao">
-            <Navegacao  />
-            {dadosOpcoes.map((dadosOpcoes) => <Opcao {...dadosOpcoes} />)}
-            
+            <Navegacao />
+            {dadosOpcoes.map((dadosOpcoes) => <Opcao key={dadosOpcoes.texto} {...dadosOpcoes} />)} 
         </div>
     );
 }

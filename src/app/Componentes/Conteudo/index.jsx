@@ -6,9 +6,7 @@ const Conteudo = ({titulo, texto}) => {
             <section className="titulo-topico">
                 {titulo}
             </section>
-            <p className="texto-topico">
-                {texto}
-            </p>
+            <p className="texto-topico">{texto}</p>
         </div>
     );
 }

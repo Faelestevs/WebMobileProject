@@ -5,9 +5,9 @@ let dadosPag2 = [
     {
         titulo: "Tratamento",
         texto: <><p>O tratamento do câncer pode ser feito de várias maneiras de tratamento combinadas, sendo a principal a cirurgia oncológica, que pode ser empregada em conjunto com a radioterapia, quimioterapia e transplante de medula óssea, conforme cada caso. O tratamento será escolhido pelo médico de acordo com a gravidade e extensão da doença.</p>
-        <h2>Radioterapia</h2><p>Tratamento no qual se utilizam radiações para destruir um tumor ou impedir que suas células aumentem, ela é indolor e pode ser usada em conjunto com a quimioterapia e a cirurgia oncológica.</p>
-        <h2>Quimioterapia</h2><p>Tratamento que utiliza medicamento para destruir as células doentes que formam o tumor. Dentro do corpo, cada medicamento possui uma ação diferente e por tal motivo são utilizados vários tipos de cada vez. O medicamento se mistura ao sangue e é transportado para todo o corpo, destruindo as células cancerígenas.</p>
-        <h2>Transplante de medula óssea</h2>
+        <p className="titulo-texto-topico">Radioterapia</p><p>Tratamento no qual se utilizam radiações para destruir um tumor ou impedir que suas células aumentem, ela é indolor e pode ser usada em conjunto com a quimioterapia e a cirurgia oncológica.</p>
+        <p className="titulo-texto-topico">Quimioterapia</p><p>Tratamento que utiliza medicamento para destruir as células doentes que formam o tumor. Dentro do corpo, cada medicamento possui uma ação diferente e por tal motivo são utilizados vários tipos de cada vez. O medicamento se mistura ao sangue e é transportado para todo o corpo, destruindo as células cancerígenas.</p>
+        <p className="titulo-texto-topico">Transplante de medula óssea</p>
         <p>É um tratamento para algumas doenças malignas que afetam as células do sangue, como a Leucemia, que é um câncer no sangue. O tratamento consiste na substituição da medula óssea doente por células normais com o intuito de reconstituí-la.</p></>
     },
     {
@@ -24,7 +24,7 @@ const SegundaOpcao = () => {
     return(
         <>
         <Navegacao />
-        {dadosPag2.map((dadosPag2) => <Conteudo {...dadosPag2} />)}
+        {dadosPag2.map((dadosPag2) => <Conteudo key={dadosPag2.titulo} {...dadosPag2} />)}
         </>
     )
 }

@@ -4,8 +4,9 @@ import Link from "next/link"
 
 const Sobre = () => {
     return(
-        <div className="main-sobre">
+        <>
         <Navegacao />
+        <div className="main-sobre">
         <section className="corpo-sobre">
             <header className="titulo-sobre">
                 Autoria
@@ -24,6 +25,7 @@ const Sobre = () => {
         </section>
         <img className="img-cientista" src="./imagens/cientista.png"></img>
         </div>
+        </>
     )
 }
 

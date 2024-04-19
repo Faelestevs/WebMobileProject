@@ -1,7 +1,6 @@
 
 .corpo-relato-user {
-    width: 450px;
-    margin: auto;
+    width: 90%;
     display: flex;
     flex-direction: column;
     margin: 40px auto;
@@ -25,7 +24,7 @@
 }
 
 .username {
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 .username, .user-local {

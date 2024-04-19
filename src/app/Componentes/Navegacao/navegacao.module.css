@@ -1,0 +1,97 @@
+.navegacaoBarra {
+    height: clamp(80px, 6vw, 100px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoNavegacao, .hamburguerNotao {
+    width: 30%;
+    height: 80%;
+    margin: 2%;
+}
+
+.logoNavegacao {
+    object-fit: scale-down;
+    object-position: center;
+}
+
+.hamburguerBotao{
+    object-fit: scale-down;
+    object-position: center;
+    cursor: pointer;
+    margin: auto;
+    margin-right: 2%;
+    display: none;
+}
+
+.opcaoNavegacao {
+    color: black;
+    text-decoration: none;
+    
+
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin-right: 15px;
+}
+
+.menu li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.li:hover {
+    background-color: var(--cor-primaria);
+}
+
+@media (max-width: 800px){
+    .hamburguerBotao {
+        display: block;
+        height: 60px;
+    }
+
+    .navMenu {
+        display: flex;
+    }
+
+    .navMenuActive .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        right: 0px;
+        left: 0;
+        background-color: var(--cor-primaria);  
+        height: 100vh;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .opcaoNavegacao {
+        color: white;
+        text-decoration: underline;
+        font-weight: 500;
+        font-size: 24pt;
+        margin: 15px;
+    }
+
+    .opcaoNavegacao:hover {
+        color: #457B9D;
+        cursor: pointer;
+        transition: 0.8s;
+    }
+
+    .fechaJanela {
+        cursor: pointer;
+        border: 1px solid red;
+        z-index: 100;
+    }
+}

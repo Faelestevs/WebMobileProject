@@ -1,5 +1,3 @@
-
-
 body {
     width: 100%;
     height: 100%;
@@ -7,11 +5,10 @@ body {
 
 .main-sobre {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-items: center;
-    position: absolute;
 }
 
 .corpo-sobre{
@@ -23,14 +20,14 @@ body {
     align-items: stretch;
     flex-direction: column;
     margin: 30px auto 40px;
-    border-radius: 40px;
+    border-radius: 24px;
 }
 
 .titulo-sobre {
     background-color: var(--cor-primaria);
     border: 1px solid var(--cor-terciaria);
-    height: 40%;
-    border-radius: 40px 40px 0px 0px;
+    height: 50%;
+    border-radius: 24px 24px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +38,7 @@ body {
 
 .inferior-box-sobre {
     background-color: var(--cor-quartenaria);
-    border-radius: 0px 0px 40px 40px;
+    border-radius: 0px 0px 24px 24px;
     border: 1px solid var(--cor-terciaria);
     display: flex;
     flex-direction: column;
@@ -52,7 +49,7 @@ body {
 
 .autores-sobre {
     text-align:initial;
-    width: 60%;
+    width: 90%;
     align-self: center;
 }
 
@@ -64,10 +61,8 @@ body {
 }
 
 .img-cientista {
-    max-width: 150px;
-    max-height: 30%;
+    max-width: 30%;
     margin-left: 12%;
-    margin-top: -40px;
 }
 
 .link-fecha {

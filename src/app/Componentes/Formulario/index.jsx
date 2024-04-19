@@ -15,12 +15,12 @@ const Formulario = () => {
             <div className='campo-cidade-sexo'>
             <div className='campo'>
             <label>Cidade</label>
-            <input type='text'></input>
+            <input type='text' className='campo-cidade'></input>
             </div>
             <div className='campo'>
             <label>Sexo</label>
             <select className='campo-sexo'>
-                <option selected="selected">Escolher</option>
+                <option defaultValue={"Escolher"}>Escolher</option>
                 <option value="Não informar">Não informar</option>
                 <option value="Masculino">Masculino</option>
                 <option value="Feminino">Feminino</option>

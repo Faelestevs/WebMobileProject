@@ -1,7 +1,5 @@
 import "./CardRelato.css";
 
-
-
 const CardRelato = ({usuario, cidade, imgPerfil, relato, data}) => {
     return (
         <>
