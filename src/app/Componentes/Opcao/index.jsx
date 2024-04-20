@@ -1,16 +1,14 @@
 import Link from "next/link"
-import './Opcao.css';
-import TelaOpcoes from "../TelaOpcoes";
-
+import styles from './opcao.module.css';
 
 // inserir props
 const Opcao = ({imagem, texto, pagina}) => {
     return (
-        <Link href={pagina} className="link-opcao">
-        <div className='botoes-opcao'>
-        <section className='espaco-opcao'>
-            <img src={imagem} className='imagem-opcao'></img>
-            <h2 className='texto-opcao'>{texto}</h2>
+        <Link href={pagina} className={styles.linkOpcao}>
+        <div className={styles.botoesOpcao}>
+        <section className={styles.espacoOpcao}>
+            <img src={imagem} className={styles.imagemOpcao}></img>
+            <h2 className={styles.textoOpcao}>{texto}</h2>
         </section>
         </div>
         </Link>

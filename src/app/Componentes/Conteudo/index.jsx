@@ -1,12 +1,12 @@
-import "./Conteudo.css";
+import styles from "./conteudo.module.css";
 
 const Conteudo = ({titulo, texto}) => {
     return (
-        <div className="corpo-conteudo">
-            <section className="titulo-topico">
+        <div className={styles.corpoConteudo}>
+            <section className={styles.tituloTopico}>
                 {titulo}
             </section>
-            <p className="texto-topico">{texto}</p>
+            <p className={styles.textoTopico}>{texto}</p>
         </div>
     );
 }

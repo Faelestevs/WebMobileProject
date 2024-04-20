@@ -1,6 +1,6 @@
 import CardRelato from "../CardRelato";
 import Navegacao from "../Navegacao";
-import "./RelatosUser.css";
+import styles from "./relatosUser.module.css";
 
 const dadosRelatos = [
     {
@@ -23,7 +23,7 @@ const RelatosUser = () => {
     return (
         <>
         <Navegacao />
-        <div className="titulo-topico-relatos"><p className="titulo-relatos">Relatos</p></div>
+        <div className={styles.tituloTopicoRelatos}><p className={styles.tituloRelatos}>Relatos</p></div>
         {dadosRelatos.map((dadosRelatos) => <CardRelato key={dadosRelatos.usuario} {...dadosRelatos} />)}
         </>
     )

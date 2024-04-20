@@ -12,24 +12,24 @@
     margin-top: 15%;
 }
 
-input, .campo-sexo {
+input, .campoSexo {
     border: none;
     border-bottom: 2px solid black;
     margin-bottom: 15px;
 }
 
-.campo-sexo {
+.campoSexo {
     text-align: center;
     width: 95%;
     margin: auto;
 }
 
-.campo-cidade {
+.campoCidade {
     width: 95%;
     margin: auto;
 }
 
-.campo-cidade-sexo {
+.campoCidadeSexo {
     display: flex;
     align-items: baseline;
     justify-content: space-between;

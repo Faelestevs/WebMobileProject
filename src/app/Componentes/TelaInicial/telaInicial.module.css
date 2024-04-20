@@ -1,10 +1,3 @@
-:root{
-    --cor-primaria:  #2EC4B6;
-    --cor-secundaria: #A8DADC;
-    --cor-terciaria: #457B9D;
-}
-
-
 .corpo {
     background-color: #2EC4B6;
     display: flex;
@@ -18,7 +11,7 @@
     bottom: 0;
 }
 
-.superior-tela-inicial, .centro-tela-inicial, .inferior-tela-inicial {
+.superiorTelaInicial, .centroTelaInicial, .inferiorTelaInicial {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,13 +21,13 @@
     word-wrap: break-word;
 }
 
-.centro-tela-inicial > .texto-tela-inicial {
+.centroTelaInicial > .textoTelaInicial {
     font-size: 36px;
     font-weight: 400;
     text-align: center;
 }
 
-.centro-tela-inicial {
+.centroTelaInicial {
     flex-direction: column;
 }
 
@@ -47,7 +40,7 @@
     object-position: -4px 9px;
 }
 
-.img-primeira {
+.imgPrimeira {
     width: 270px;
     height: 270px;
     border-radius: 50%;

@@ -37,3 +37,10 @@ Link {
 body {
     margin: 0;
 }
+
+:root {
+    --cor-primaria:  #2EC4B6;
+    --cor-secundaria: #A8DADC;
+    --cor-terciaria: #457B9D;
+    --cor-quartenaria: #EDF6F9;
+}

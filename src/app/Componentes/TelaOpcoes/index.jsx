@@ -2,7 +2,7 @@
 
 import Navegacao from "../Navegacao";
 import Opcao from "../Opcao";
-import "./TelaOpcoes.css"
+import styles from "./telaOpcoes.module.css"
 
 let dadosOpcoes = [
     {
@@ -25,7 +25,7 @@ let dadosOpcoes = [
 const TelaOpcoes = () => {
 
     return (
-        <div className="pagina-escolhe-opcao">
+        <div className={styles.paginaEscolheOpcao}>
             <Navegacao />
             {dadosOpcoes.map((dadosOpcoes) => <Opcao key={dadosOpcoes.texto} {...dadosOpcoes} />)} 
         </div>

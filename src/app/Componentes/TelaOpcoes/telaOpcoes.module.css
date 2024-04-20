@@ -1,5 +1,4 @@
-.pagina-escolhe.opcao {
-    display: flex;
+.paginaEscolheOpcao {
     justify-content: center;
     align-items: center;
 }

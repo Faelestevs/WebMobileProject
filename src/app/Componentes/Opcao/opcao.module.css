@@ -1,22 +1,12 @@
-:root{
-    --cor-primaria:  #2EC4B6;
-    --cor-secundaria: #A8DADC;
-    --cor-terciaria: #457B9D;
-    --cor-quartenaria: #EDF6F9;
-}
 
-body {
-    background-color: white;
-}
-
-.botoes-opcao {
+.botoesOpcao {
     display: flex;
     justify-self: center;
     justify-content: center;
     margin: 8% 3%;
 }
 
-.espaco-opcao {
+.espacoOpcao {
     width: 100%;
     height: 20%;
     max-width: 600px;
@@ -29,11 +19,11 @@ body {
     transition: 0.8s;
 }
 
-.espaco-opcao:hover {
+.espacoOpcao:hover {
     scale: 102%;
 }
 
-.imagem-opcao {
+.imagemOpcao {
     max-width: 30%;
     max-height: 30%;
     max-width: 130px;
@@ -43,14 +33,14 @@ body {
     object-fit: cover;
 }
 
-.texto-opcao {
+.textoOpcao {
     height: 30px;
     margin: auto ;
     color: white;
     font-size: clamp(20px, 4vw, 30px);
 }
 
-.link-opcao {
+.linkOpcao {
     text-decoration: none;
 }
 

@@ -1,23 +1,23 @@
 
-.corpo-relato-user {
+.corpoRelatoUser {
     width: 90%;
     display: flex;
     flex-direction: column;
     margin: 40px auto;
 }
 
-.perfil-user {
+.perfilUser {
     width: 60px;
     height: 60px;
     object-fit: cover;
     margin: 8px;
 }
 
-.espaco-superior-relato {
+.espacoSuperiorRelato {
     display: flex;
 }
 
-.espaco-texto-user {
+.espacoTextoUser {
     width: 100%;
     height: 50px;
     margin-top: 12px;
@@ -27,23 +27,23 @@
     font-size: 14pt;
 }
 
-.username, .user-local {
+.username, .userLocal {
     margin: 2px;
 }
 
-.corpo-texto-relato {
+.corpoTextoRelato {
     border: 2px solid var(--cor-primaria);
     background-color: var(--cor-quartenaria);
     border-radius: 12px;
     padding: 8px 8px 0px 8px;
 }
 
-.texto-relato {
+.textoRelato {
     text-align: justify;
     margin: 8px 8px;
 }
 
-.data-postagem{
+.dataPostagem{
     text-align: end;
     margin: 10px 8px 4px 8px;
     color: rgba(128, 128, 128, 0.681);

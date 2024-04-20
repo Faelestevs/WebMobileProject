@@ -1,20 +1,20 @@
-import "./CardRelato.css";
+import styles from "./cardRelato.module.css";
 
 const CardRelato = ({usuario, cidade, imgPerfil, relato, data}) => {
     return (
         <>
-        <section className="corpo-relato-user">            
+        <section className={styles.corpoRelatoUser}>            
             <header>
-                <div className="espaco-superior-relato">
-                <img src={imgPerfil} className="perfil-user"></img>
-                <div className="espaco-texto-user">
-                    <h2 className="username">{usuario}</h2>
-                    <p className="user-local">{cidade}</p> 
+                <div className={styles.espacoSuperiorRelato}>
+                <img src={imgPerfil} className={styles.perfilUser}></img>
+                <div className={styles.espacoTextoUser}>
+                    <h2 className={styles.username}>{usuario}</h2>
+                    <p className={styles.userLocal}>{cidade}</p> 
                 </div>
                 </div>
-                <footer className="corpo-texto-relato">
-                    <p className="texto-relato">{relato}</p>
-                    <p className="data-postagem">{data}</p>
+                <footer className={styles.corpoTextoRelato}>
+                    <p className={styles.textoRelato}>{relato}</p>
+                    <p className={styles.dataPostagem}>{data}</p>
                 </footer>
             </header>
         </section>

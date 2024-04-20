@@ -1,19 +1,9 @@
-:root{
-    --cor-primaria:  #2EC4B6;
-    --cor-secundaria: #A8DADC;
-    --cor-terciaria: #457B9D;
-    --cor-quartenaria: #EDF6F9;
-}
 
-body {
+.corpoConteudo {
     margin: 0;
 }
 
-.corpo-conteudo {
-    margin: 0;
-}
-
-.titulo-topico {
+.tituloTopico {
     height: clamp(44px, 8vw, 80px);
     width: 70%;
     letter-spacing: 2px;
@@ -29,7 +19,7 @@ body {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.20);
 }
 
-.texto-topico {
+.textoTopico {
     margin: 30px 5%;
     padding: 12px;
     max-width: 800px;

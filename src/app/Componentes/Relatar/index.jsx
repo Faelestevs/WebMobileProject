@@ -1,18 +1,18 @@
 import Navegacao from "../Navegacao";
-import "./Relatar.css";
+import styles from "./relatar.module.css";
 
 const Relatar = () => {
 
     return(
         <>
         <Navegacao />
-        <section className="corpo-relatos">
-        <h2 className="titulo-relatar">Relatar</h2>
-        <img src="./imagens/imfRelatos.png" className="imagem-relatos"></img>
-        <p className="texto-relato-motivador">Experiências que Transformam: Compartilhando Aprendizados e Inspirações</p>
-            <form className="form-relatos">
-                <textarea className="campo-comentario" placeholder="Comente aqui..."></textarea>
-                <button className="botao-confirmar">Publicar</button>
+        <section className={styles.corpoRelatos}>
+        <h2 className={styles.tituloRelatar}>Relatar</h2>
+        <img src="./imagens/imfRelatos.png" className={styles.imagemRelatos}></img>
+        <p className={styles.textoRelatoMotivador}>Experiências que Transformam: Compartilhando Aprendizados e Inspirações</p>
+            <form className={styles.formRelatos}>
+                <textarea className={styles.campoComentario} placeholder="Comente aqui..."></textarea>
+                <button className={styles.botaoConfirmar}>Publicar</button>
             </form>
         </section>
         </>
