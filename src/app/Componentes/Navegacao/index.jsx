@@ -13,7 +13,6 @@ const Navegacao = () => {
     )
 }
 
-
 function Menu() {
     const [menu, setMenu] = useState(styles.navMenu);
 
@@ -24,25 +23,12 @@ function Menu() {
     const fecha = () => {
         setMenu(styles.navMenu)
     }
-
-    if (menu == styles.navMenu) {
+    
         return (
             <nav className={menu}>
                 <img src="./imagens/hambuger.png" onClick={clique} className={styles.hamburguerBotao}></img>
                 <ul className={styles.menu}>
-                    <li className={styles.li}><Link href="/Home" className={styles.opcaoNavegacao}>Home</Link></li>
-                    <li className={styles.li}><Link href="/RelatarPost" className={styles.opcaoNavegacao}>Relatar</Link></li>
-                    <li className={styles.li}><Link href="/Relatos" className={styles.opcaoNavegacao}>Relatos</Link></li>
-                    <li className={styles.li}><Link href="/About" className={styles.opcaoNavegacao}>Sobre</Link></li>
-                    <li className={styles.li}><Link href="/Registro" className={styles.opcaoNavegacao}>Registre-se</Link></li>
-                </ul>
-            </nav>
-        )
-    } else if (menu == styles.navMenuActive) {
-        return (
-            <nav className={menu}>
-                <img src="./imagens/closeIcon.png" onClick={() => fecha()} className={styles.fechaJanela}></img>
-                <ul className={styles.menu}>
+                    <li className={styles.botaoFechar}><img onClick={fecha} src="./imagens/closeIcon.png"/></li>
                     <li className={styles.li}><Link href="/Home" className={styles.opcaoNavegacao}>Home</Link></li>
                     <li className={styles.li}><Link href="/RelatarPost" className={styles.opcaoNavegacao}>Relatar</Link></li>
                     <li className={styles.li}><Link href="/Relatos" className={styles.opcaoNavegacao}>Relatos</Link></li>
@@ -52,8 +38,6 @@ function Menu() {
             </nav>
         )
     }
-
-}
 
 
 export default Navegacao
