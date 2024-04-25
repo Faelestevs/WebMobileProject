@@ -12,7 +12,7 @@
     margin-top: 15%;
 }
 
-input, .campoSexo {
+.input, .campoSexo {
     border: none;
     border-bottom: 2px solid black;
     margin-bottom: 15px;
@@ -43,15 +43,16 @@ input, .campoSexo {
     justify-content: center;
 }
 
-input {
+.input {
     margin-bottom: 40px;
 }
 
-input[type=number]::-webkit-inner-spin-button { 
+.input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none;
     
 }
-input[type=number] { 
+
+.input[type=number] { 
    -moz-appearance: textfield;
    appearance: textfield;
 

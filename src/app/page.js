@@ -1,10 +1,12 @@
 "use client"
 
-import React from 'react';
-import Apresentacao from './Pages/Apresentacao';
+import React, { Children } from 'react';
+import Apresentacao from './Apresentacao/Apresentacao';
 
-export default function Inicio() {
+const Inicio = () => {
   return(
     <Apresentacao />
   )
 }
+
+export default Inicio

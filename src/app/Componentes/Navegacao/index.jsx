@@ -25,9 +25,9 @@ function Menu() {
     }
     
         return (
-            <nav className={menu}>
+            <nav className={menu} id={styles.menu}>
                 <img src="./imagens/hambuger.png" onClick={clique} className={styles.hamburguerBotao}></img>
-                <ul className={styles.menu}>
+                <ul className={styles.opcoesMenu}>
                     <li className={styles.botaoFechar}><img onClick={fecha} src="./imagens/closeIcon.png"/></li>
                     <li className={styles.li}><Link href="/Home" className={styles.opcaoNavegacao}>Home</Link></li>
                     <li className={styles.li}><Link href="/RelatarPost" className={styles.opcaoNavegacao}>Relatar</Link></li>
