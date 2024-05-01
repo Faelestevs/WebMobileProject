@@ -1,19 +1,21 @@
 
 .mainSobre {
+    margin-bottom: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
+    align-self: center;
     flex-direction: column;
     justify-items: center;
+    margin: 5% 0px;
 }
 
 .corpoSobre{
     width: 80%;
     max-width: 600px;
-    height: 400px;
+    max-height: 600px;
     display: flex;
     justify-content: center;
-    align-items: stretch;
     flex-direction: column;
     margin: 30px auto 40px;
     border-radius: 24px;
@@ -22,7 +24,7 @@
 .tituloSobre {
     background-color: var(--cor-primaria);
     border: 1px solid var(--cor-terciaria);
-    height: 50%;
+    height: 100px;
     border-radius: 24px 24px 0px 0px;
     display: flex;
     justify-content: center;
@@ -41,12 +43,13 @@
     gap: 30px;
     text-align: center;
     padding: 15px;
+    height: 40%;
 }
 
 .autoresSobre {
-    text-align:initial;
-    width: 90%;
+    text-align: center;
     align-self: center;
+    font-weight: 600;
 }
 
 .fechaJanelaVerde {
@@ -56,11 +59,6 @@
     align-self: center;
 }
 
-.imgCientista {
-    max-width: 30%;
-    margin-left: 12%;
-}
-
 .linkFecha {
     display: flex;
     justify-content: center;
@@ -68,7 +66,7 @@
     width: 50px;
 }
 
-.divFecha {
+.divFechaPagina {
     display: flex;
     justify-content: center;
     margin: 30px;

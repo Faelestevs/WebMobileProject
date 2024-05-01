@@ -97,7 +97,7 @@
         width: 40px;
         position: absolute;
         top: 20px;
-        right: 10px;
+        right: 20px;
         z-index: 100;
     }
 
@@ -125,6 +125,7 @@
         font-weight: 500;
         font-size: 24pt;
         text-align: center;
+        margin: 12px;
     }
 
     .opcaoNavegacao:hover {
@@ -145,6 +146,6 @@
 
     .li:hover{
         background-color: var(--cor-primaria);
-
     }
+
 }

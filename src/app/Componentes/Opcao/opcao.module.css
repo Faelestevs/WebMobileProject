@@ -3,14 +3,13 @@
     display: flex;
     justify-self: center;
     justify-content: center;
-    margin: 8% 3%;
 }
 
 .espacoOpcao {
     width: 100%;
-    height: 20%;
+    height: 50%;
+    max-height: 160px;
     max-width: 600px;
-    max-height: 130px;
     display: flex;
     background-color:#2EC4B6;
     border-radius: 24px;
@@ -24,10 +23,11 @@
 }
 
 .imagemOpcao {
-    max-width: 30%;
-    max-height: 30%;
-    max-width: 130px;
-    max-height: 130px;
+    object-fit: scale-down;
+    width: 30%;
+    height: 30%;
+    max-width: 160px;
+    max-height: 160px;
     border-radius: 24px;
     background-color: #EDF6F9;
     object-fit: cover;
@@ -37,32 +37,54 @@
     height: 30px;
     margin: auto ;
     color: white;
-    font-size: clamp(20px, 4vw, 30px);
+    font-size: clamp(16px, 4vw, 24px);
 }
 
 .linkOpcao {
     text-decoration: none;
+    width: 100%;
+    height: 40%;
+    margin: 2%;
 }
 
-@media (min-width: 700px) {
+.descricao {
+    display: none;
+}
+
+@media (min-width: 730px) {
 
 
     .botoesOpcao {
         min-height: 500px;
+        width: 100%;
         display: inline-flex;
-        margin: 60px 4%;
         justify-content: space-evenly;
     }
 
     .espacoOpcao {
         display: flex;
         flex-direction: column;
-        width: 200px;
+        justify-content: center;
+        width: 100%;
         min-height: 500px;
     }
 
     .imagemOpcao {
-        max-width: 200px;
-        max-height: 200px;
+        min-width: 100%;
+        min-height: 250px;
+        align-self: center;
+        object-fit: scale-down;
+    }
+    
+    .descricao {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+    }
+
+    .textoOpcao {
+        font-size: clamp(12px, 4vw, 24px);
+        margin-top: 44px;
     }
 }

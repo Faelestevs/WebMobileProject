@@ -13,27 +13,6 @@ Link {
     font-weight: 600;
 }
 
-.botaoConfirmar {
-    width: 186px;
-    height: 49px;
-    align-self: center;
-    margin-top: 80px;
-    border-radius: 12px;
-    background-color: var(--cor-primaria);
-    border: none;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20);
-    color: white;
-    font-size: 16pt;
-    font-weight: 500;
-    transition: 0.8s;
-}
-
-.botaoConfirmar:hover {
-    background-color: var(--cor-terciaria);
-    scale: 102%;
-    cursor: pointer;
-}
-
 body {
     margin: 0;
 }

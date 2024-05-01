@@ -12,18 +12,17 @@ const Sobre = () => {
                 Autoria
             </header>
             <footer className={styles.inferiorBoxSobre}>
-                <ul className={styles.autoresSobre}>
-                    <li>Fernando Seong Jae Yoo</li>
-                    <li>Guilherme Silva Dias</li>
-                    <li>Raffael Rodrigues Esteves</li>
-                </ul>
+                <div className={styles.autoresSobre}>
+                    <p>Fernando Seong Jae Yoo</p>
+                    <p>Guilherme Silva Dias</p>
+                    <p>Raffael Rodrigues Esteves</p>
+                </div>
                 Universidade Presbiteriana Mackenzie
             </footer>
             <div className={styles.divFechaPagina}>
                 <Link className={styles.linkFecha} href="/Home"><img className={styles.fechaJanelaVerde} src="./imagens/closeIonGreen.png"></img></Link>
             </div>
         </section>
-        <img className={styles.imgCientista} src="./imagens/cientista.png"></img>
         </div>
         </>
     )

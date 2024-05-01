@@ -20,8 +20,8 @@
 }
 
 .textoTopico {
-    margin: 30px 5%;
-    padding: 12px;
+    margin: 30px auto;
+    padding: 24px;
     max-width: 800px;
     background-color: #2EC4B6;
     color: white;
@@ -32,4 +32,11 @@
     align-self: center;
     font-size: clamp(8px, 4vw, 16px);
     text-indent: 0;
+}
+
+@media (max-width: 900px) {
+    .textoTopico{
+        margin: 30px 5%;
+        padding: 16px;
+    }
 }

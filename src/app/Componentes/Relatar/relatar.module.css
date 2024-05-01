@@ -8,12 +8,12 @@
     width: 90%;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 40px auto;
     text-align: center;
     background-color: var(--cor-quartenaria);
     border-radius: 36px;
     margin-top: 12px;
-    padding: 12px;
+    padding: 24px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20);
     padding-bottom: 12px;
 }
@@ -32,13 +32,21 @@
 
 .campoComentario {
     resize: none;
-    width: 90%;
     height: 130px;
-    max-width: 400px;
-    margin: 12px auto;
+    width: 90%;
+    margin: 12px auto 40px;
     padding: 8px;
-    border-radius: 16px;
-    border-color: var(--cor-terciaria);
+    border-radius: 8px;
+    border: none;
+}
+
+.campo {
+    width: 90%;
+    align-self: center;
+    margin: 12px 0px;
+    padding: 6px;
+    border-radius: 8px;
+    border: none;
 }
 
 .formRelatos {
@@ -48,10 +56,34 @@
 
 .campoComentario::-webkit-input-placeholder{
     color: var(--cor-primaria);
-    font-weight: 600;
-    font-size: 16pt;
+    font-weight: 500;
+}
+
+.campo::-webkit-input-placeholder{
+    color: var(--cor-primaria);
+    font-weight: 500;
 }
 
 .formRelatos > .botaoConfirmar {
     margin: auto;
+}
+
+.botaoConfirmar {
+    width: 186px;
+    height: 49px;
+    align-self: center;
+    border-radius: 12px;
+    background-color: var(--cor-primaria);
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20);
+    color: white;
+    font-size: 16pt;
+    font-weight: 500;
+    transition: 0.8s;
+}
+
+.botaoConfirmar:hover {
+    background-color: var(--cor-terciaria);
+    scale: 102%;
+    cursor: pointer;
 }
