@@ -1,0 +1,81 @@
+.cardClima {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    min-width: 250px;
+    padding: 16px;
+    background-color: var(--cor-primaria);
+    border-radius: 12px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.20);
+}
+
+.espacoCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    color: white;
+    flex-direction: column;
+}
+
+.superiorCard {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temperatura {
+    font-weight: 700;
+    font-size: 28pt;
+}
+
+.icone {
+    object-fit: cover;
+    width: 64px;
+    height: 64px;
+    background-color: var(--cor-terciaria);
+    border-radius: 50%;
+}
+
+.fonteCidade {
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.textoMotivacional {
+    color: var(--cor-terciaria);
+    background-color: var(--cor-secundaria);
+    min-width: 250px;
+    padding: 16px;
+    border-radius: 12px;
+    text-align: center;
+    width: 30%;
+    font-weight: 600;
+}
+
+.gota {
+    width: 12px;
+    height: 36px;
+    object-fit: scale-down;
+    object-position: center;
+    margin-right: 4px;
+}
+
+.dadosAdicionais {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    justify-content: space-around;
+    margin: 6px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.umidade {
+    display: flex;
+    align-items: center;
+}
