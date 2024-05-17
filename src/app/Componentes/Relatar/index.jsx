@@ -7,17 +7,14 @@ import { criarRelato, getRelato } from "../../util/api.js"
 
 const Relatar = () => {
 
-    const [relatos, setRelatos] = useState(null);
+    
     const [inputNome, setInputNome] = useState("");
     const [inputEmail, setInputEmail] = useState("");
     const [inputCidade, setInputCidade] = useState("");
     const [inputComentario, setInputComentario] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
 
-    const readRelato = async () => {
-        const dados = await getRelato();
-        setRelatos(dados);
-    }
+
 
     const novoRelato = async () => {
 
@@ -54,7 +51,6 @@ const Relatar = () => {
 
     }
 
-    useEffect(() => { readRelato(); }, [] )
 
     return(
         <>

@@ -29,11 +29,11 @@ function Menu() {
                 <img src="./imagens/hambuger.png" onClick={clique} className={styles.hamburguerBotao}></img>
                 <ul className={styles.opcoesMenu}>
                     <li className={styles.botaoFechar}><img onClick={fecha} src="./imagens/closeIcon.png"/></li>
-                    <li className={styles.li}><Link href="/Home" className={styles.opcaoNavegacao}>Home</Link></li>
+                    <li className={styles.li}><Link href="/Home" className={styles.opcaoNavegacao}>Início</Link></li>
                     <li className={styles.li}><Link href="/RelatarPost" className={styles.opcaoNavegacao}>Relatar</Link></li>
                     <li className={styles.li}><Link href="/Relatos" className={styles.opcaoNavegacao}>Relatos</Link></li>
+                    <li className={styles.li}><Link href="/Descubra" className={styles.opcaoNavegacao}>Descubra</Link></li>
                     <li className={styles.li}><Link href="/About" className={styles.opcaoNavegacao}>Sobre</Link></li>
-                    <li className={styles.li}><Link href="/Registro" className={styles.opcaoNavegacao}>Registre-se</Link></li>
                 </ul>
             </nav>
         )
