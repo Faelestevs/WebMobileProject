@@ -1,0 +1,7 @@
+.ultimasNoticias {
+    text-align: center;
+    background-color: var(--cor-terciaria);
+    padding: 12px;
+    color: white;
+    font-size: clamp(12pt, 4vw, 20pt);
+}

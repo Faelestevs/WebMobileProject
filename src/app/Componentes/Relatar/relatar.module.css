@@ -80,6 +80,9 @@
     font-size: 16pt;
     font-weight: 500;
     transition: 0.8s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .botaoConfirmar:hover {
@@ -87,3 +90,26 @@
     scale: 102%;
     cursor: pointer;
 }
+
+.mensagemSucesso {
+    color: rgb(0, 255, 0);
+    font-weight: bold;
+}
+
+.mensagemErro {
+    font-weight: bold;
+    color: red;
+}
+
+.mensagemErro-treme {
+    animation: treme 0.3s;
+    animation-iteration-count: 7;
+}
+
+@keyframes treme {
+    0% {margin-left: 0;}
+    25% {margin-left: 5px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -5px;}
+    100% {margin-left: 0;}
+  }

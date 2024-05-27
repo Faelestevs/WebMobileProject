@@ -9,7 +9,10 @@ const ClimaNoticia = () => {
         <>
         <Navegacao />
         <Clima />
-        <Noticia />
+        <section>
+            <h2 className={styles.ultimasNoticias}>Últimas notícias</h2>
+            <Noticia />
+        </section>
         </>
     )
 }

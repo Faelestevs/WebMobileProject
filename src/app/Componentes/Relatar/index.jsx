@@ -13,6 +13,7 @@ const Relatar = () => {
     const [inputCidade, setInputCidade] = useState("");
     const [inputComentario, setInputComentario] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
+    const [sucessMessage, setSucessMessage] = useState("")
 
 
 
@@ -42,15 +43,17 @@ const Relatar = () => {
             return;
         }
 
-        await criarRelato({nome, cidade, comentario, dia, mes});
-        await readRelato();
+        const imagem = "./imagens/profileIcon.png"
+
+        await criarRelato({nome, cidade, comentario, dia, mes, imagem});
+        // await readRelato();
         setInputNome("");
         setInputEmail("");
         setInputCidade("");
         setInputComentario("");
+        setSucessMessage("Relato enviado com sucesso!")
 
     }
-
 
     return(
         <>
@@ -64,7 +67,8 @@ const Relatar = () => {
                 <input type="text" placeholder="Cidade" value={inputCidade} className={styles.campo} required onChange={(e) => {setInputCidade(e.target.value)}}/>
                 <input type="email" placeholder="E-mail" value={inputEmail} className={styles.campo} required onChange={(e) => {setInputEmail(e.target.value)}}/>
                 <textarea className={styles.campoComentario} value={inputComentario} placeholder="Comente aqui..." required onChange={(e) => {setInputComentario(e.target.value)}}></textarea>
-                <button className={styles.botaoConfirmar} onClick={novoRelato}>Publicar</button>
+                <div className={styles.botaoConfirmar} onClick={novoRelato}>Publicar</div>
+                {!errorMessage == "" ? (<p className={styles.mensagemErro}>{errorMessage}</p>) : <p className={styles.mensagemSucesso}>{sucessMessage}</p>}
             </form>
         </section>
         </>

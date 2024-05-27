@@ -36,18 +36,26 @@ const Noticia = () => {
 
     useEffect(() => {fetchNoticia()}, [])
 
-    if (!dados) return <section>Carregando...</section>
+    if (!dados) return <section className={styles.loading}>Carregando...</section>
+
+    const formatarData = (dado) => {
+        const ano = dado.slice(0,4);
+        const mes = dado.slice(5,7);
+        const dia = dado.slice(8,10)
+        return dia+"/"+mes+"/"+ano
+    }
 
     return(
             <section>
                 {dados.map((artigo, index) => {
                     return (
-                    <section key={`artigo${index}`}>
-                        <div ><h2 href={artigo.url}>{artigo.title}</h2></div>
-                        <div>{artigo.author}</div>
-                        <div>{artigo.publishedAt}</div>
-                        <a href={artigo.url}>Clique aqui</a>
-                    </section>
+                    <a href={artigo.url} key={`artigo${index}`} className={styles.cardNoticia}>
+                        <header className={styles.headerNoticia}><h4 className={styles.tituloNoticia}>{artigo.title}</h4></header>
+                        <footer className={styles.inferiorNoticia}>
+                            <p className={styles.autoria}>{artigo.author}</p>
+                            <p className={styles.dataPublicacao}>{formatarData(artigo.publishedAt)}</p>
+                        </footer>
+                    </a>
                 )
                 })}
                 

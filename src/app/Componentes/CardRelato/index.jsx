@@ -8,7 +8,7 @@ const CardRelato = ({relato}) => {
         <section className={styles.corpoRelatoUser}>            
             <header>
                 <div className={styles.espacoSuperiorRelato}>
-                <img src="" className={styles.perfilUser}></img>
+                <img src={relato.imagem} className={styles.perfilUser}></img>
                 <div className={styles.espacoTextoUser}>
                     <h2 className={styles.username}>{relato.nome}</h2>
                     <p className={styles.userLocal}>{relato.cidade}</p> 
