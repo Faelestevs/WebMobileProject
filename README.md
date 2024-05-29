@@ -18,4 +18,11 @@
 
 ![prototypeWeb](https://github.com/Faelestevs/WebMobileProject/assets/158126344/337fe0dc-b2d6-456f-baae-3bcfbdbc2f9d)
 
+## Relatos
+
+<p>A nossa aplicação conta com uma aba "Relatos" que reúne histórias de superação de pessoas que estão em uma luta constante contra ou câncer ou que já se superaram da enfermidade, servindo de incetivo para as outras pessoas a não desistirem do tratamento. Além do mais, se você também está passando pela mesma dificuldade ou já passou por isso, pode compartilhar o seu relat com toda a comunidade e sirva de exemplo para elas.</p>
+
+## Descubra
+
+<p>A aba "Descubra" irá apresentar informações atualizadas do clima e as últimas notícias relacionadas à saúde e bem-estar, acesse a nossa aplicação para aprender, informar-se e descobrir mais!</p>
 
