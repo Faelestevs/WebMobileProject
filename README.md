@@ -16,5 +16,6 @@
 ## Protótipo de Alta Fidelidade
 ![prototypeMobile](https://github.com/Faelestevs/WebMobileProject/assets/158126344/6b285201-bcc0-40de-8e14-b878e1615e66)
 
-![prototypeWeb](https://github.com/Faelestevs/WebMobileProject/assets/158126344/a8e49ef5-55ae-4cfc-8358-8dcba49c0d8c)
+![prototypeWeb](https://github.com/Faelestevs/WebMobileProject/assets/158126344/337fe0dc-b2d6-456f-baae-3bcfbdbc2f9d)
+
 
