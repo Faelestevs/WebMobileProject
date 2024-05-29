@@ -17,15 +17,6 @@
       "dia": 15,
       "mes": "Fevereiro",
       "id": "b5f8"
-    },
-    {
-      "id": "fe21",
-      "nome": "Raffael Rodrigues Esteves",
-      "cidade": "Poá",
-      "comentario": "abcde",
-      "dia": 25,
-      "mes": "Maio",
-      "imagem": "./imagens/profileIcon.png"
     }
   ]
 }
