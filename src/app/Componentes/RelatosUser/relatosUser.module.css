@@ -7,9 +7,21 @@
     background-color:#457B9D;
     color: white;
     text-align: center;
-    align-content: center;
     font-size: clamp(12px, 4vw, 24px);
     font-weight: 600;
     margin-top: 16px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.20);
+    align-content: center;
+}
+
+.tituloRelatos {
+    margin: auto;
+}
+
+.loadingRelato {
+    width: 100%;
+    text-align: center;
+    margin-top: 15%;
+    font-weight: bold;
+    color: var(--cor-primaria);
 }
